@@ -5,7 +5,9 @@ import { NavLink } from 'react-router-dom';
 const NavMenu = () => {
     return (
         <Menu>
-            <NavLink to="/">Home</NavLink>
+            <Menu.Item>
+                <NavLink to="/">Home</NavLink>
+            </Menu.Item>
         </Menu>
     )
 }
