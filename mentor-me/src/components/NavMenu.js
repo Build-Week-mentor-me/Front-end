@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Menu } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 const NavMenu = () => {
     return (
-        <div>
-            
-        </div>
+        <Menu>
+            <NavLink to="/">Home</NavLink>
+        </Menu>
     )
 }
+
+export default NavMenu
