@@ -297,7 +297,7 @@ li.footerLi {
 
 /* Media Queries */
 
-@media only screen and (min-width: 801px), (max-width: 1174px) {
+/* @media only screen and (min-width: 801px), (max-width: 1174px) {
   .logo {
     margin: 0 auto;
   }
@@ -305,7 +305,7 @@ li.footerLi {
   .mainUl {
     margin: 0 auto;
   }
-}
+} */
 
 @media only screen and (max-width: 800px) {
 
