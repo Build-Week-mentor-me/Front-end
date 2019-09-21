@@ -14,18 +14,6 @@ const Footer = () => {
                                 <Link to="/">Home</Link>
                             </li>
                             <li className="footerLi">
-                                <Link to="/contact">Contact</Link>
-                            </li>
-                            <li className="footerLi">
-                                <Link to="/about">About</Link>
-                            </li>
-                            <li className="footerLi">
-                                <Link to="#">Pricing</Link>
-                            </li>
-                            <li className="footerLi">
-                                <Link to="#">Features</Link>
-                            </li>
-                            <li className="footerLi">
                                 <Link to="/login">Log in</Link>
                             </li>
                         </ul>

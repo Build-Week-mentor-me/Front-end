@@ -18,18 +18,6 @@ const NavMenu = () => {
                     <NavLink to="/">Home</NavLink>
                 </li>
                 <li className="mainLI">
-                    <NavLink to="/contact">Contact</NavLink>
-                </li>
-                <li className="mainLI">
-                    <NavLink to="/about">About</NavLink>
-                </li>
-                <li className="mainLI">
-                    <NavLink to="#">Pricing</NavLink>
-                </li>
-                <li className="mainLI">
-                    <NavLink to="#">Features</NavLink>
-                </li>
-                <li className="mainLI">
                     <NavLink className="logIn" to="/login">
                         Log In
                     </NavLink>

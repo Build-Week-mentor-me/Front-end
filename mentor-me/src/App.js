@@ -1,7 +1,7 @@
 import React from 'react';
-import NavMenu from './components/NavMenu/NavMenu';
-import AppRouting from './components/AppRouting';
-import Footer from './components/Footer/Footer';
+import NavMenu from './Components/NavMenu/NavMenu';
+import AppRouting from './Components/AppRouting';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {

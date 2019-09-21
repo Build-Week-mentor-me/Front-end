@@ -41,7 +41,7 @@ body {
 /* Navigation */
 .mainNav {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-color: var(--main-blue);
     padding: 20px;
     display: flex;
@@ -214,6 +214,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     padding: 40px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footerLinksMediaBlock {
     display: flex;
@@ -292,6 +296,17 @@ li.footerLi {
 }
 
 /* Media Queries */
+
+/* @media only screen and (min-width: 801px), (max-width: 1174px) {
+  .logo {
+    margin: 0 auto;
+  }
+
+  .mainUl {
+    margin: 0 auto;
+  }
+} */
+
 @media only screen and (max-width: 800px) {
 
     /* Main Nav */
