@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import FormikQuestionForm from '../components/Questions/QuestionForm';
+import FormikQuestionForm from '../Components/Questions/QuestionForm';
 
 const AppRouting = () => {
     return (
