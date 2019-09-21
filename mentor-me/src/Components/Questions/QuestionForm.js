@@ -58,7 +58,7 @@ const FormikQuestionForm = withFormik({
             .post("https://reqres.in/api/users", values)
             .then(res => {
                 console.log(res)
-                // resetForm()
+                resetForm()
             })
             .catch(err => console.log(err))
     }
