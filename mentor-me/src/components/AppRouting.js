@@ -9,7 +9,6 @@ const AppRouting = () => {
                 exact path="/questionform" 
                 component={FormikQuestionForm} 
             />
-            <h1>Hello from approuting</h1>
         </div>
     )
 }
