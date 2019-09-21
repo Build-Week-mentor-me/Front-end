@@ -1,37 +1,42 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavMenu.css';
+import '../../App.css';
 
 const NavMenu = () => {
     return (
         <nav className="mainNav">
-        <h2 className="logo">Mentor Me</h2>
-        <div className="mobileLogInContainer">
-                <a className="logIn"href="#">Log In</a>
+            <h2 className="logo">Mentor Me</h2>
+            <div className="mobileLogInContainer">
+                <NavLink className="logIn" to="/login">
+                    Log In
+                </NavLink>
                 <i className="fas fa-sign-in-alt"></i>
-        </div>
-        <ul className="mainUl">
-            <li className="mainLI">
-                <a href="#">Home</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Contact</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">About</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Pricing</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Features</a>
-            </li>
-            <li className="mainLI">
-                <a className="logIn"href="#">Log In</a>
-                <i className="fas fa-sign-in-alt"></i>
-            </li>
-        </ul>
-    </nav>
+            </div>
+            <ul className="mainUl">
+                <li className="mainLI">
+                    <NavLink to="/">Home</NavLink>
+                </li>
+                <li className="mainLI">
+                    <NavLink to="/contact">Contact</NavLink>
+                </li>
+                <li className="mainLI">
+                    <NavLink to="/about">About</NavLink>
+                </li>
+                <li className="mainLI">
+                    <NavLink to="#">Pricing</NavLink>
+                </li>
+                <li className="mainLI">
+                    <NavLink to="#">Features</NavLink>
+                </li>
+                <li className="mainLI">
+                    <NavLink className="logIn" to="/login">
+                        Log In
+                    </NavLink>
+                    <i className="fas fa-sign-in-alt"></i>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
@@ -41,34 +46,36 @@ export default NavMenu
 
 
 
-    <nav className="mainNav">
-        <h2 className="logo">Mentor Me</h2>
-        <div className="mobileLogInContainer">
-                <a className="logIn"href="#">Log In</a>
-                <i className="fas fa-sign-in-alt"></i>
-        </div>
-        <ul className="mainUl">
-            <li className="mainLI">
-                <a href="#">Home</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Contact</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">About</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Pricing</a>
-            </li>
-            <li className="mainLI">
-                <a href="#">Features</a>
-            </li>
-            <li className="mainLI">
-                <a className="logIn"href="#">Log In</a>
-                <i className="fas fa-sign-in-alt"></i>
-            </li>
-        </ul>
-    </nav> 
+    // <nav className="mainNav">
+    //     <h2 className="logo">Mentor Me</h2>
+    //     <div className="mobileLogInContainer">
+    //             <NavLink className="logIn" to="#">
+    //                 Log In
+    //             </NavLink>
+    //             <i className="fas fa-sign-in-alt"></i>
+    //     </div>
+    //     <ul className="mainUl">
+    //         <li className="mainLI">
+    //             <a href="#">Home</a>
+    //         </li>
+    //         <li className="mainLI">
+    //             <a href="#">Contact</a>
+    //         </li>
+    //         <li className="mainLI">
+    //             <a href="#">About</a>
+    //         </li>
+    //         <li className="mainLI">
+    //             <a href="#">Pricing</a>
+    //         </li>
+    //         <li className="mainLI">
+    //             <a href="#">Features</a>
+    //         </li>
+    //         <li className="mainLI">
+    //             <a className="logIn"href="#">Log In</a>
+    //             <i className="fas fa-sign-in-alt"></i>
+    //         </li>
+    //     </ul>
+    // </nav> 
 
 
     // <Menu>
