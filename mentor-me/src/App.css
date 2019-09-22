@@ -2,3 +2,409 @@
   text-align: center;
 }
 
+/* Styling brought over from Marketing Page Repo, global.css */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+:root {
+    --main-blue: #344955;
+    --accent-orange: #F9AA33;
+    --secondary-blue: #232F34;
+    font-size: 62.5%;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lobster', cursive;
+}
+body {
+     scroll-behavior: smooth;
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+}
+/* Mobile Menu */
+#hamburgerWrapper {
+  display: none;
+}
+/* Navigation */
+.mainNav {
+    width: 100%;
+    /* position: fixed; */
+    background-color: var(--main-blue);
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 0;
+
+}
+.logo {
+    font-size: 4rem;
+    color: var(--accent-orange);
+    letter-spacing: 1.5px;
+    margin-left: 100px;
+}
+.mobileLogInContainer {
+    display: none;
+}
+.mainUl {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.mainLI {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    transition: all ease-in-out 120ms;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.mainLI a {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+
+}
+.mainLI:hover {
+    animation: jump 500ms ease;
+    color: #fff;
+}
+.mainLI:hover a {
+    color: var(--accent-orange);
+}
+.mainLI:hover .logIn {
+    color: #fff;
+}
+.mainLI .logIn {
+    color: var(--accent-orange);
+}
+.mainLI i {
+    font-size: 3rem;
+    transition: all ease-in-out 120ms;
+    color: var(--accent-orange);
+}
+.mainLI:hover i {
+    color: #fff;
+}
+.heroSection {
+    /* background: url(./bump-collaboration-colleagues-1068523.jpg); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.heroSectionContentContainer {
+    width: 900px;
+    margin-left: 200px;
+    z-index: 10;
+}
+.heroOverlay {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+}
+.heroSection .title {
+    font-size: calc(2.4rem + 1vw);
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.heroSection .text {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.title span {
+    display: block;
+}
+.callToActionContainer {
+    width: 100%;
+    display: flex; 
+    margin-top: 50px;
+}
+.callToAction {
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 2rem;
+    transition: all ease-in-out 120ms;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.callToAction:hover {
+    background-color: var(--accent-orange);
+    border-color: var(--accent-orange);
+    color: fff;
+}
+/* Up Sell Section */
+#upSell {
+    flex-flow: row wrap;
+    display: flex;
+}
+.upsellBlock {
+    display: flex;
+    flex-flow: row wrap;
+    background: #232f34;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    justify-content: center;
+}
+.upsellBlock:nth-child(even) {
+    flex-flow: row-reverse wrap;
+}
+.upSellInformation {
+    width: 50%;
+}
+.upSellInformation h3 {
+    font-size: 4rem;
+    width: 100%;
+    color: var(--accent-orange);
+    letter-spacing: 2px;
+}
+.upSellInformation p {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    flex-flow: row wrap;
+}
+.IconContainer .callToActionContainer {
+    justify-content: center;
+}
+.IconContainer i {
+    font-size: 10rem;
+    color: var(--accent-orange);
+}
+
+/* Footer */
+#mainFooter {
+    background-color: var(--secondary-blue);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footerLinksMediaBlock {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footerUlContainer {
+    width: 25%;
+}
+.footerUlContainer .logo {
+    margin-left: 0;
+}
+/* .footerUl {
+    margin-left: 100px;
+} */
+li.footerLi:first-child {
+    padding-top: 10px;
+}
+
+li.footerLi {
+    padding-bottom: 10px;
+}
+.footerLi a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+.footerLi a:hover {
+    text-decoration: underline;
+}
+.footerLinksMediaBlock i {
+    font-size: 5rem;
+    color: #F9AA33;
+    margin-left: 20px;
+    transition: all ease-in-out 120ms;
+}
+.footerLinksMediaBlock .githubLink {
+    display: flex;
+    align-items: flex-end;
+}
+.footerLinksMediaBlock i:hover {
+    color: #fff;
+}
+.footerLinksMediaBlock .fa-github-square {
+    margin-left: 0;
+}
+
+.developedByTeam ul li {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.developedByTeam ul li:first-child {
+    padding-top: 5px;
+}
+.developedByTeam ul li span {
+    color: var(--accent-orange);
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+
+/* Keyframe animations */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+
+/* @media only screen and (min-width: 801px), (max-width: 1174px) {
+  .logo {
+    margin: 0 auto;
+  }
+
+  .mainUl {
+    margin: 0 auto;
+  }
+} */
+
+@media only screen and (max-width: 800px) {
+
+    /* Main Nav */
+    .mobileLogInContainer {
+        font-size: 2rem;
+        margin-right: 50px;
+        color: #fff;
+    }
+    .mobileLogInContainer a {
+        color: #fff;
+        padding-right: 5px;
+    }
+    .mobileLogInContainer i {
+        display: flex;
+        align-items: center;
+    }
+    .mainUl {
+        display: none;
+    }
+    .logo {
+        margin-left: 50px;
+        text-align: center;
+    }
+    /* HeroSection */
+    .heroSectionContentContainer {
+        width: 900px;
+        z-index: 10;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 60px;
+    }
+    .upsellBlock {
+        width: 90%;
+    }
+    .upSellInformation {
+        width: 100%;
+    }
+    .IconContainer {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footerUlContainer .logo {
+        text-align: unset;
+    }
+    .footerLinksMediaBlock {
+        width: 90%;
+    }
+    .footerUlContainer {
+        width: 55%
+    }
+    .socialMediaIcons {
+        width: 40%;
+    }
+    .footerLinksMediaBlock i {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+    .developedByTeam {
+        width: 80%;
+    }
+    .developedByTeam ul li {
+        font-size: 1.2rem;
+    }
+    .developedByTeam ul li span {
+        font-size: 1.4rem;
+    }
+
+    /* Mobile Menu */
+    .mobileLogInContainer {
+        display: flex;
+    }
+
+  #hamburgerWrapper {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    right: 0;
+    width: 100%;
+    z-index: 111;
+    display: flex;
+    background: var(--main-blue);
+  }
+
+  #hamburgerWrapper .iconLinks {
+    color: #fff;
+    font-size: 14px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .iconLinks i {
+    font-size: 20px;
+  }
+  
+}

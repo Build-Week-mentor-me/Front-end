@@ -1,0 +1,10 @@
+.nav-box-contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-second-box {
+    display: flex;
+}
