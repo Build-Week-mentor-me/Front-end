@@ -8,9 +8,8 @@ import FormikSignupForm from './Components/Signup';
 function App() {
   return (
     <div className="App">
-      <AppRouting />
       <NavMenu />
-      <FormikSignupForm />
+      <AppRouting />
       <Footer />
     </div>
   );
