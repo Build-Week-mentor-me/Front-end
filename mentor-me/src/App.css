@@ -18,6 +18,42 @@
     height: fit-content;
 }
 
+.loginForm {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 300px;
+    padding: 10rem;
+    border-radius: 2rem;
+    background-color: #344955;
+}
+
+.loginInput {
+    margin: 1rem 0;
+}
+
+.loginButton {
+    font-size: larger;
+    width: 18rem;
+    border-radius: 2rem;
+    background-color: #F9AA33;
+    color: #344955;
+}
+
+.error {
+    color: white;
+}
+.loginText {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: white;
+}
+
+
 
 /* Styling brought over from Marketing Page Repo, global.css */
 

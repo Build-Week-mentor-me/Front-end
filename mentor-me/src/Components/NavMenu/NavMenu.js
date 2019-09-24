@@ -21,7 +21,7 @@ const NavMenu = () => {
                     <NavLink to="/profiles">Profiles</NavLink>
                 </li>
                 <li className="mainLI">
-                    <NavLink className="logIn" to="/login">
+                    <NavLink className="logIn" to="/loginform">
                         Log In
                     </NavLink>
                     <i className="fas fa-sign-in-alt"></i>
