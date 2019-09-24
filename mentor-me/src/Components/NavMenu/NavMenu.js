@@ -18,6 +18,9 @@ const NavMenu = () => {
                     <NavLink to="/">Home</NavLink>
                 </li>
                 <li className="mainLI">
+                    <NavLink to="/profiles">Profiles</NavLink>
+                </li>
+                <li className="mainLI">
                     <NavLink className="logIn" to="/login">
                         Log In
                     </NavLink>
