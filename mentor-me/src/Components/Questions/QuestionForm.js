@@ -12,7 +12,7 @@ const QuestionForm = ({ status, errors, touched }) => {
         <Form>
             <div className="inputHeading">
                 {touched.title && errors.title && <p>{errors.title}</p>}
-                <h2>What is the title of your question?</h2>
+                <h2>What is your question?</h2>
                 <Field
                     type="text"
                     name="title"
@@ -20,14 +20,14 @@ const QuestionForm = ({ status, errors, touched }) => {
                 />
             </div>
 
-            <div className="inputHeading">
+            {/* <div className="inputHeading">
                 <h2>Details about your question</h2>
                 <Field 
                     type="text"
                     name="details"
                     placeholder="Details"
                 />
-            </div>
+            </div> */}
             <div className="qFormSubmitBtnContain">
                 <button 
                     type="submit"       className="qFormSubmitBtn">
@@ -43,7 +43,7 @@ const FormikQuestionForm = withFormik({
     mapPropsToValues({ title, details }) {
         return {
             title: title || "",
-            details: details || ""
+            // details: details || ""
         }
     },
 
@@ -51,8 +51,8 @@ const FormikQuestionForm = withFormik({
     validationSchema: Yup.object().shape({
         title: Yup.string()
         .required("Question is required"),
-        details: Yup.string()
-        .required("Details are required")
+        // details: Yup.string()
+        // .required("Details are required")
     }),
     // END VALIDATION SCHEMA
 
@@ -61,7 +61,7 @@ const FormikQuestionForm = withFormik({
         console.log(values)
 
         axios
-            .post("https://bw-unit4-mentor-me.herokuapp.com/api/questions", values)
+            .post("https://bw-unit4-mentor-me.herokuapp.com/api/users/questions", values)
             .then(res => {
                 console.log(res)
                 resetForm()
