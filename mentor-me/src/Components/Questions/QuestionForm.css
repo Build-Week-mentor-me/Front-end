@@ -1,7 +1,10 @@
+/* form {
+    margin: 0 auto;
+} */
+
 .formContainer {
     width: 55%;
-    margin: 0 auto;
-    margin: 30px auto 100px auto;
+    margin: 80px auto 100px auto;
     border: 1px solid hsla(0,0%,100%,.5);
     background: #fafafa;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 
@@ -9,24 +12,33 @@
 }
 
 .formHeading {
-    padding: 5px;
+    padding: 15px 0;
     border: 1px solid hsla(0,0%,100%,.5);
     background: #344955;
     color: #F9AA33;
+    text-align: center;
 }
 
 .inputHeading {
     color: #344955;
-    margin-top: 20px;
+    margin: 30px auto 0;
+    text-align: center;
 }
 
 .inputHeading h2 {
     font-family: sans-serif;
 }
 
+.qFormSubmitBtnContain {
+    text-align: center;
+}
+
 .qFormSubmitBtn {
     padding: 10px;
-    margin: 20px auto;
+    margin: 30px auto;
     cursor: pointer;
+    border-radius: 5px;
+    background: #344955;
+    color: white;
 }
 

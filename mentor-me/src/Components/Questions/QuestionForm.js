@@ -28,7 +28,12 @@ const QuestionForm = ({ status, errors, touched }) => {
                     placeholder="Details"
                 />
             </div>
-            <button type="submit" className="qFormSubmitBtn">Submit your question</button>
+            <div className="qFormSubmitBtnContain">
+                <button 
+                    type="submit"       className="qFormSubmitBtn">
+                    Submit your question
+                </button>
+            </div>
         </Form>
     </div>
     )
