@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { withFormik, Form, Field } from "formik";
 import * as yup from 'yup';
 import axios from 'axios';
@@ -12,19 +13,25 @@ const LoginForm = ({ errors, touched, status }) => {
         }},[status]);
 
     return (
+        <div className='loginContainer'>
         <div className='loginForm'>
             <Form>
                 {touched.name && errors.name &&  <p className='error'>{errors.name}</p>}
-                <Field className='loginInput' type='text' name='name' placeholder='Name' />
+                <Field className='loginInput' type='text' name='name' placeholder='Username' />
                 <br/>
                 {touched.password && errors.password &&  <p className='error'>{errors.password}</p>}
                 <Field className='loginInput' type='password' name='password' placeholder='Password' />
                 <br/>
+                <Link to='/profiles'>
                 <button className='loginInput loginButton' type='submit'>Login</button>
+                </Link>
                 <p className='loginText'>Or...</p>
+                <Link to='/signupform'>
                 <button className='loginInput loginButton' type='submit'>Register</button>
+                </Link>
 
             </Form>
+        </div>
         </div>
     )
 };
