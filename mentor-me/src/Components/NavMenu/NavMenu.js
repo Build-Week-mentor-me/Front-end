@@ -15,7 +15,7 @@ const NavMenu = () => {
             </div>
             <ul className="mainUl">
                 <li className="mainLI">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/loginform">Home</NavLink>
                 </li>
                 <li className="mainLI">
                     <NavLink to="/profiles">Profiles</NavLink>
