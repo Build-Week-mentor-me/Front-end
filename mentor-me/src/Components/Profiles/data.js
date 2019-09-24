@@ -1,3 +1,6 @@
+import React from 'react';
+import axios from 'axios';
+
 const entrepreneur = 'http://nelgara.com.au/img/defaultAccountIcon.jpg';
 const mentor = 'https://images.assetsdelivery.com/compings_v2/apoev/apoev1806/apoev180600175.jpg';
 
@@ -87,5 +90,6 @@ let data = [
 
     }
 ];
+
 
 export default data;
