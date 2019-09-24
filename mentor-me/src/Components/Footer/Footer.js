@@ -11,10 +11,10 @@ const Footer = () => {
                         <h3 className="logo">Mentor Me</h3>
                         <ul className="footerUl">
                             <li className="footerLi">
-                                <Link to="/">Home</Link>
+                                <Link to="/loginform">Home</Link>
                             </li>
                             <li className="footerLi">
-                                <Link to="/login">Log in</Link>
+                                <Link to="/loginform">Log in</Link>
                             </li>
                         </ul>
                     </div>
