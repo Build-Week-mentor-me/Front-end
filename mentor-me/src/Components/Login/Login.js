@@ -45,6 +45,7 @@ const formikLoginFrom = withFormik({
         axios.post('https://reqres.in/api/animals', props)
             .then((res) => {
                 setStatus(res.data)
+                console.log(res.data)
             })
             .catch((err) => {
                 console.log(err)
