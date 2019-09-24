@@ -56,7 +56,7 @@ const FormikQuestionForm = withFormik({
         console.log(values)
 
         axios
-            .post("https://bw-unit4-mentor-me.herokuapp.com/api/users/questions", values)
+            .post("https://bw-unit4-mentor-me.herokuapp.com/api/questions", values)
             .then(res => {
                 console.log(res)
                 resetForm()

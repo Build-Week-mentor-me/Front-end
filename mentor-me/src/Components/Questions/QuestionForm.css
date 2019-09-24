@@ -20,6 +20,10 @@
     margin-top: 20px;
 }
 
+.inputHeading h2 {
+    font-family: sans-serif;
+}
+
 .qFormSubmitBtn {
     padding: 10px;
     margin: 20px auto;

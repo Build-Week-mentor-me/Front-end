@@ -7,12 +7,13 @@ const AppRouting = () => {
     return (
         <div>
             <Route 
-                exact path="/questionform" 
-                component={FormikQuestionForm} 
-            />
-            <Route 
                 exact path="/signup"
                 component={FormikSignupForm}
+            />
+            
+            <Route 
+                exact path="/questionform" 
+                component={FormikQuestionForm} 
             />
         </div>
     )
