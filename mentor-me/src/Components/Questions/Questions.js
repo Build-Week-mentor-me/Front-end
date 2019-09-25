@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import QuestionList from './QuestionList';
+import './QuestionForm.css';
 
 const Questions = (props) => {
     // setting state for all questions
@@ -17,9 +18,9 @@ const Questions = (props) => {
     }, []);
 
     return (
-        <section className="questionsList">
-            <h1>Our Complete List of Questions</h1>
-            <div>
+        <section className="questionListContainer">
+            <h1 className="questionsMainHeader">Our Complete List of Questions</h1>
+            <div className="questionList">
                 {questions.map((question, index) => {
                     return (
                         <QuestionList 
