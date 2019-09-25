@@ -24,6 +24,7 @@ const Questions = (props) => {
                     return (
                         <QuestionList 
                             key={index}
+                            username={question.username}
                             question={question.question}
                         />
                     )

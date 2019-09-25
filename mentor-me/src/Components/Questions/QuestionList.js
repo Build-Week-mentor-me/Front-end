@@ -5,7 +5,8 @@ const QuestionList = (props) => {
     return (
         <div className="questionListContainer">
             <Card> 
-                <Card.Header>{props.question}</Card.Header>
+                <Card.Header>{props.username}</Card.Header>
+                <p>{props.question}</p>
             </Card>
         </div>
     )
