@@ -8,8 +8,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <NavMenu />
-        <AppRouting />
+      <NavMenu />
+      <AppRouting />
       <Footer />
     </div>
   );

@@ -3,13 +3,14 @@ import React from 'react';
 import { withFormik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import './QuestionForm.css';
 
 const QuestionForm = ({ status, errors, touched }) => {
     return (
-    <div>
-        <h1>Question Form</h1>
+    <div className="formContainer">
+        <h1 className="formHeading">Question Form</h1>
         <Form>
-            <div>
+            <div className="inputHeading">
                 {touched.title && errors.title && <p>{errors.title}</p>}
                 <h2>What is the title of your question?</h2>
                 <Field
@@ -19,15 +20,20 @@ const QuestionForm = ({ status, errors, touched }) => {
                 />
             </div>
 
-            <div>
-                <h2>Details about your question, please</h2>
+            <div className="inputHeading">
+                <h2>Details about your question</h2>
                 <Field 
                     type="text"
                     name="details"
                     placeholder="Details"
                 />
             </div>
-            <button type="submit">Submit your question</button>
+            <div className="qFormSubmitBtnContain">
+                <button 
+                    type="submit"       className="qFormSubmitBtn">
+                    Submit your question
+                </button>
+            </div>
         </Form>
     </div>
     )
@@ -55,7 +61,7 @@ const FormikQuestionForm = withFormik({
         console.log(values)
 
         axios
-            .post("https://reqres.in/api/users", values)
+            .post("https://bw-unit4-mentor-me.herokuapp.com/api/questions", values)
             .then(res => {
                 console.log(res)
                 resetForm()

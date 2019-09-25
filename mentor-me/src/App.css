@@ -277,14 +277,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     padding: 40px 0;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 .footerLinksMediaBlock {
     display: flex;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     flex-flow: row wrap;
     justify-content: space-between;
