@@ -1,26 +1,34 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Profile from "./User-Mentor-Profile";
 
-function UserPage (props) {
-    console.log(props);
+const UserPage = (props) => {
     const [user, setUser] = useState([]);
-
-    // user.map((item) => {
-    //     return item.name;
-    // });
+    const name = props.match.params.name;
+console.log(name);
+    const entrepreneur = 'http://nelgara.com.au/img/defaultAccountIcon.jpg';
+    const mentor = 'https://images.assetsdelivery.com/compings_v2/apoev/apoev1806/apoev180600175.jpg';
 
     useEffect(() => {
-        setUser(props.data[2]);
-    },[user]);
-
-    const { name, email, userType, src, field, about } = user;
+        axios
+            .get(`https://bw-unit4-mentor-me.herokuapp.com/api/users`)
+            .then(res => {
+                console.log(res.data);
+                setUser(res.data);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    },[name,setUser]);
     return (
-        <div>
-            <p>{name}</p>
-            <img src={src} alt='missing' />
-        </div>
-    )
-
-
-}
+        <section className='profileSection'>
+            {user.map((item, index) => {
+                if (user[index].username === name) {
+                return (
+                    <Profile key={index} props={item} />
+                )
+            }})}
+        </section>
+    )};
 
 export default UserPage;
