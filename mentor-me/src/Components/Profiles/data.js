@@ -6,89 +6,54 @@ const mentor = 'https://images.assetsdelivery.com/compings_v2/apoev/apoev1806/ap
 
 let data = [
     {
-        src: entrepreneur,
-        userType: 'entrepreneur',
-        name: 'John Smith',
-        email: 'John123@hotmail.com',
-        field: 'Programmer',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
+        // src: entrepreneur,
+        position: 'entrepreneur',
+        username: 'John-Smith',
+        password: '1245',
     },
     {
-        src: mentor,
-        userType: 'mentor',
-        name: 'Mike Johnson',
-        email: 'Mike123@hotmail.com',
-        field: 'Legal',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
+        // src: entrepreneur,
+        position: 'entrepreneur',
+        username: 'Josh-Johnson',
+        password: '1285',
+    },
+    {
+        // src: mentor,
+        position: 'mentor',
+        username: 'Susan-Potter',
+        password: '1885',
+    },
+    {
+        // src: mentor,
+        position: 'mentor',
+        username: 'Joseph-Callaway',
+        password: '1111',
+    },
+    {
+        // src: entrepreneur,
+        position: 'entrepreneur',
+        username: 'Bob-Marley',
+        password: '0420',
+    },
+    {
+        // src: entrepreneur,
+        position: 'entrepreneur',
+        username: 'Kevin-Smith',
+        password: '8598',
+    },
+    {
+        // src: mentor,
+        position: 'mentor',
+        username: 'James-Jones',
+        password: '8741',
+    },
+    {
+        // src: entrepreneur,
+        position: 'entrepreneur',
+        username: 'Billy-Wagner',
+        password: '9632',
+    },
 
-    },
-    {
-        src: entrepreneur,
-        userType: 'entrepreneur',
-        name: 'Bob Melody',
-        email: 'John123@hotmail.com',
-        field: 'Technology',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-    },
-    {
-        src: mentor,
-        userType: 'mentor',
-        name: 'Susan McMasters',
-        email: 'Mike123@hotmail.com',
-        field: 'Marketing',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-
-    },
-    {
-        src: entrepreneur,
-        userType: 'entrepreneur',
-        name: 'Noah Elderly',
-        email: 'John123@hotmail.com',
-        field: 'Marketing',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-    },
-    {
-        src: mentor,
-        userType: 'mentor',
-        name: 'Mike',
-        email: 'Mike123@hotmail.com',
-        field: 'Marketing',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-
-    },
-    {
-        src: entrepreneur,
-        userType: 'entrepreneur',
-        name: 'Joseph Colby',
-        email: 'John123@hotmail.com',
-        field: 'Marketing',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-    },
-    {
-        src: mentor,
-        userType: 'mentor',
-        name: 'Bill Woody',
-        email: 'Mike123@hotmail.com',
-        field: 'Marketing',
-        about: 'Pretend you want to go out but then don\'t pushes butt to face, and pounce on unsuspecting person so meow go back to sleep owner brings' +
-            'food and water tries to pet on head, so scratch get sprayed by water because bad cat licks your face. Cat not kitten around lick yarn hanging' +
-            'out of own butt but attack feet cats making all the muffins friends are not food or it\'s 3am, time to create some chaos .'
-
-    }
 ];
 
 
