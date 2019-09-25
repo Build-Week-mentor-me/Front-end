@@ -19,7 +19,7 @@ const Questions = (props) => {
 
     return (
         <section className="questionListContainer">
-            <h1 className="questionsMainHeader">Our Complete List of Questions</h1>
+            <h1 className="questionsMainHeader">All Questions</h1>
             <div className="questionList">
                 {questions.map((question, index) => {
                     return (
