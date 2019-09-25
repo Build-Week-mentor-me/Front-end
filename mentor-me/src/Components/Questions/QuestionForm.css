@@ -42,3 +42,28 @@
     color: white;
 }
 
+/* Questions.js Component Styling */
+.questionListContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.questionsMainHeader {
+    font-family: sans-serif;
+}
+
+.questionList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* QuestionList.js Component Styling */
+.singleQuestion {
+    width: 40%;
+    margin: 0 auto;
+}
