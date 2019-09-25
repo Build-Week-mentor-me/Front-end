@@ -1,14 +1,13 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
 import './QuestionForm.css';
 
 const QuestionList = (props) => {
     return (
         <div className="singleQuestion">
-            <Card> 
-                <Card.Header>{props.username}</Card.Header>
-                <p>{props.question}</p>
-            </Card>
+            <div className="questionCard"> 
+                <h2 className="questionUsername">{props.username}</h2>
+                <p className="questionQuestion">{props.question}</p>
+            </div>
         </div>
     )
 }

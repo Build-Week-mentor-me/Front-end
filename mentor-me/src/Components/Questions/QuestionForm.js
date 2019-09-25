@@ -8,15 +8,16 @@ import './QuestionForm.css';
 const QuestionForm = ({ status, errors, touched }) => {
     return (
     <div className="formContainer">
-        <h1 className="formHeading">Question Form</h1>
+        <h1 className="formHeading">Post Question</h1>
         <Form>
             <div className="inputHeading">
                 {touched.title && errors.title && <p>{errors.title}</p>}
-                <h2>What is your question?</h2>
+                {/* <h2>What is your question?</h2> */}
                 <Field
                     type="text"
                     name="title"
-                    placeholder="Title"
+                    placeholder="Ask your question"
+                    className="inputField"
                 />
             </div>
 
@@ -30,8 +31,9 @@ const QuestionForm = ({ status, errors, touched }) => {
             </div> */}
             <div className="qFormSubmitBtnContain">
                 <button 
-                    type="submit"       className="qFormSubmitBtn">
-                    Submit your question
+                    type="submit"       
+                    className="qFormSubmitBtn">
+                    Post
                 </button>
             </div>
         </Form>

@@ -1,33 +1,45 @@
 import React from "react";
 import { withFormik, Form, Field } from "formik";
+import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import axios from "axios";
+import './Signup.css';
 
 function SignupForm({ values, errors, touched }) {
     return (
-        <Form>
-            <div>
+        <Form className="formContain">
+            <div className="formInputContain">
                 {touched.username && errors.username && <p>{errors.username}</p>}
-                <Field type="text" name="username" placeholder="User Name" />
+                <h2 className="formHeader">Sign Up</h2>
+                <Field 
+                  type="text"  
+                  name="username" 
+                  placeholder="User Name"  className="inputField" 
+                />
             </div>
-            <div>
+            <div className="formInputContain">
                 {touched.password && errors.password && <p>{errors.password}</p>}
                 <Field
                     type="password"
                     name="password"
                     placeholder="Password"
+                    className="inputField"
                 />
             </div>
             <div>
                 <label>
                     {" "}
-                    <Field component="select" name="position">
+                    <Field component="select" name="position" className="personalBtn">
                         <option value="entrepreneur">Entrepreneur</option>
                         <option value="mentor">Mentor</option>
                     </Field>
                 </label>
             </div>
-            <button type="submit">Sign me up!</button>
+            <Link to="/profiles">
+              <button type="submit" className="submitBtn">
+                Sign up
+              </button>
+            </Link>
         </Form>
     );
 }
