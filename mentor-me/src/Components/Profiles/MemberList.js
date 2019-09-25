@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Profile from "./User-Mentor-Profile";
-import data from "./data";
+import axios from 'axios';
 
 function MemberList () {
+    const [users, setUsers] = useState([]);
+
+        useEffect(() => {
+            axios.get('https://bw-unit4-mentor-me.herokuapp.com/api/users')
+                .then((res) => {
+                    setUsers(res.data);
+                    // console.log(res);
+                })
+                .catch((err) => {
+                    console.log(err)
+                });
+        },[setUsers]);
 
     return (
         <section className='profileSection'>
-            {data.map((item) => {
+            {users.map((item, index) => {
                 return (
-                    <Profile key={Math.random()} props={item} />
+                    <Profile key={index} props={item} />
                 )
             })}
         </section>
