@@ -6,6 +6,7 @@ import UserPage from "./Profiles/UserPage";
 import FormikSignupForm from "./Signup";
 import data from "./Profiles/data";
 import formikLoginFrom from "./Login/Login";
+import Questions from './Questions/Questions';
 
 const AppRouting = () => {
     return (
@@ -16,6 +17,7 @@ const AppRouting = () => {
             />
             <Route exact path='/loginform' component={formikLoginFrom} />
             <Route exact path='/signupform' component={FormikSignupForm} />
+            <Route exact path="/questions" component={Questions} />
             <Route exact path='/profiles' component={MemberList} />
             <Route exact path='/profile/:name' render={props => <UserPage {...props} data={data} />} />
         </div>

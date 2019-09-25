@@ -49,6 +49,7 @@ const FormikSignupForm = withFormik({
     handleSubmit(values) {
         console.log(values);
 
+
         // Cobrettie begin testing functionality
         axios
             .post("https://bw-unit4-mentor-me.herokuapp.com/api/users/register", values)
@@ -58,7 +59,6 @@ const FormikSignupForm = withFormik({
             .catch(err => {
                 console.log(err.message)
             })
-
     }
 })(SignupForm);
 
