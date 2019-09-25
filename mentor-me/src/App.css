@@ -63,6 +63,51 @@
     color: white;
 }
 
+.individual {
+    margin: 5rem 15rem;
+    display: flex;
+    border: 1.5px solid lightgray;
+    padding: 1rem;
+    border-radius: 2rem;
+    line-height: 5rem;
+}
+
+.propUserCard {
+    width: 60%;
+    padding-left: 5rem;
+}
+
+.propHeader{
+    font-size: 3.5rem;
+}
+
+.profilePic {
+    height: 25rem;
+    width: 20rem;
+}
+
+.propPosition {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.propAbout {
+    width: 90%;
+    padding-right: 5rem;
+}
+
+.propAboutSection {
+    margin-top: 2rem;
+}
+
+.propTitle {
+    font-size: 2rem;
+}
+
+.propAboutPara {
+    line-height: 2;
+
+}
 
 
 /* Styling brought over from Marketing Page Repo, global.css */

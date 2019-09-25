@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import axios from "axios";
 
 function SignupForm({ values, errors, touched }) {
+
     return (
         <Form>
             <div>
@@ -46,15 +47,15 @@ const FormikSignupForm = withFormik({
         password: Yup.string().required("Password is required"),
     }),
 
+
+
     handleSubmit(values) {
         console.log(values);
-
-
         // Cobrettie begin testing functionality
         axios
             .post("https://bw-unit4-mentor-me.herokuapp.com/api/users/register", values)
             .then(res => {
-                console.log(res)
+                console.log(res);
             })
             .catch(err => {
                 console.log(err.message)
