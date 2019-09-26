@@ -1,6 +1,6 @@
 [build]
-base    = "mentor-me/"
-publish = "mentor-me/build/"
+base    = "./mentor-me/"
+publish = "./mentor-me/build/"
 command = "npm run build"
 
 [[redirects]]
