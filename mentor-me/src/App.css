@@ -18,49 +18,63 @@
     height: fit-content;
 }
 
-.loginForm {
+.formLogin {
     display: flex;
     justify-content: center;
-    justify-self: flex-end;
+    flex-direction: column;
+}
+
+.loginForm {
     margin: 0 auto;
-    margin-top: 11rem;
-    margin-bottom: 10rem;
-    margin-left: 15rem;
-    width: 300px;
+    margin-bottom: 28rem;
+    width: 500px;
     padding: 6rem;
     border-radius: 2rem;
-    background-color: #344955;
+    background-color: white;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
 .loginContainer {
-    background-image: url("http://culturacolaborativa.socialbase.com.br/wp-content/uploads/2012/09/bump-collaboration-colleagues-1068523-980x420.jpg");
+    background-image: url("http://www.crescentsolutions.net/blog/wp-content/uploads/2015/03/handshake_forward.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position-x: right;
     padding: 8rem;
 }
 
+.loginHeader {
+    color: #344955;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .loginInput {
+    display: flex;
+    justify-content: center;
     margin: 1rem 0;
     padding: .8rem;
     border-radius: .8rem;
 }
 
 .loginButton {
+    margin: 0 auto;
     font-size: larger;
     width: 20rem;
     border-radius: 2rem;
-    background-color: #F9AA33;
-    color: #344955;
+    background-color: #344955;
+    color: white;
 }
 
 .error {
-    color: white;
+    color: black;
+    background-color: lightcoral;
 }
 .loginText {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    color: white;
+    color: #344955;
 }
 
 .individual {
