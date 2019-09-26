@@ -21,9 +21,11 @@ const Questions = (props) => {
     return (
         <section className="questionListContainer">
             <h1 className="questionsMainHeader">All Questions</h1>
-            <Link to="/questionform">
-                <button>Ask your own question</button>
-            </Link>
+            <div className="askQuestBtnContain">
+                <Link to="/questionform">
+                    <button className="askQuestBtn">Ask your own question</button>
+                </Link>
+            </div>
             <div className="questionList">
                 {questions.map((question, index) => {
                     return (
