@@ -76,14 +76,34 @@
     font-family: -apple-system, sans-serif;
     font-weight: 400;
     font-size: 3rem;
-    padding: 0 0 60px 0;
+    width: 50%;
+    padding: 0 0 15px 0;
+    margin: 0 auto 30px;
     text-align: center;
+    border-bottom: 1px solid #344955;
 }
 
 .questionList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.askQuestBtnContain {
+    text-align: center;
+}
+
+.askQuestBtn {
+    background-color: #344955;
+    color: #fff;
+    letter-spacing: .5px;
+    font-size: 16px;
+    /* border: none; */
+    border-radius: 2px;
+    height: 36px;
+    padding: 0 16px;
+    margin: 30px 0 50px 0;
+    cursor: pointer;
 }
 
 /* QuestionList.js Component Styling */

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import QuestionList from './QuestionList';
 import './QuestionForm.css';
@@ -20,6 +21,11 @@ const Questions = (props) => {
     return (
         <section className="questionListContainer">
             <h1 className="questionsMainHeader">All Questions</h1>
+            <div className="askQuestBtnContain">
+                <Link to="/questionform">
+                    <button className="askQuestBtn">Ask your own question</button>
+                </Link>
+            </div>
             <div className="questionList">
                 {questions.map((question, index) => {
                     return (
