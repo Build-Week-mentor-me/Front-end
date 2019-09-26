@@ -7,9 +7,13 @@ import axios from 'axios';
 const LoginForm = ({ errors, touched, status }) => {
     const [user, setUser] = useState([]);
 
+    // const forwardUser = () => {(history.push('/'))}
+
     useEffect(() => {
         if (status) {
             setUser([...user, status])
+            // forwardUser()
+            console.log(status)
         }},[status]);
 
     return (
@@ -52,7 +56,8 @@ const formikLoginFrom = withFormik({
             .post('https://bw-unit4-mentor-me.herokuapp.com/api/users/login', props)
             .then((res) => {
                 setStatus(res.data)
-                console.log(res.data)
+                // resetForm()
+                // console.log(res.data)
             })
             .catch((err) => {
                 console.log(err)
