@@ -5,18 +5,18 @@ import axios from 'axios';
 import './QuestionForm.css';
 
 const QuestionForm = ({ status, errors, touched }) => {
-    const [user_id, setUser_id] = useState();
+    // const [user_id, setUser_id] = useState();
     
-    useEffect(() => {
-        axios
-            .get("https://bw-unit4-mentor-me.herokuapp.com/api/users")
-            .then(res => {
-                console.log(res.data)
-                setUser_id(res.data)
-                // console.log(status)
-            })
-            .catch(err => console.log(err))
-    }, [status])
+    // useEffect(() => {
+    //     axios
+    //         .get("https://bw-unit4-mentor-me.herokuapp.com/api/users")
+    //         .then(res => {
+    //             console.log(res.data)
+    //             // setUser_id(res.data)
+    //             // console.log(status)
+    //         })
+    //         .catch(err => console.log(err))
+    // }, [status])
 
     return (
     <div className="formContainer">
