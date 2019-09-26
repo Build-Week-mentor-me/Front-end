@@ -19,7 +19,8 @@ const LoginForm = ({ errors, touched, status }) => {
     return (
         <div className='loginContainer'>
         <div className='loginForm'>
-            <Form>
+            <Form className='formLogin'>
+                <h2 className='loginHeader'>The secret to success lies here</h2>
                 {touched.name && errors.name &&  <p className='error'>{errors.name}</p>}
                 <Field className='loginInput' type='text' name='username' placeholder='Username' />
                 <br/>
@@ -51,9 +52,7 @@ const formikLoginFrom = withFormik({
         password: yup.string().required('Incorrect Password'),
     }),
     handleSubmit: (props, { setStatus }) => {
-        //https://reqres.in/api/animals
-        axios
-            .post('https://bw-unit4-mentor-me.herokuapp.com/api/users/login', props)
+        axios.post('https://bw-unit4-mentor-me.herokuapp.com/api/users/login', props)
             .then((res) => {
                 setStatus(res.data)
                 // resetForm()
