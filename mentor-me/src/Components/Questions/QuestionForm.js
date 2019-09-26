@@ -57,7 +57,7 @@ const FormikQuestionForm = withFormik({
     mapPropsToValues({ question, user_id, details }) {
         return {
             question: question || "",
-            user_id: user_id || 3,
+            user_id: user_id || 2,
             // details: details || ""
         }
     },
