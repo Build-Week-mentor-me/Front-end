@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { withFormik, Form, Field } from "formik";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import * as Yup from "yup";
 import axios from "axios";
 import './Signup.css';
 
-function SignupForm({ values, errors, touched }) {
+// const signedIn = false;
 
+function SignupForm({ values, errors, touched }) {
     return (
       <div className="formPage">
           <Form className="formContain">
@@ -72,6 +73,10 @@ const FormikSignupForm = withFormik({
             .catch(err => {
                 console.log(err.message)
             })
+
+        // if (signedIn === true) {
+        //   return <Redirect to="/login" />
+        // }
     }
 })(SignupForm);
 
