@@ -64,12 +64,14 @@
 }
 
 .individual {
-    margin: 5rem 15rem;
+    margin: 5rem 20rem;
     display: flex;
     border: 1.5px solid lightgray;
     padding: 1rem;
     border-radius: 2rem;
     line-height: 5rem;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
 .propUserCard {
@@ -82,8 +84,8 @@
 }
 
 .profilePic {
-    height: 25rem;
-    width: 20rem;
+    height: 30rem;
+    width: 25rem;
 }
 
 .propPosition {
@@ -106,8 +108,8 @@
 
 .propAboutPara {
     line-height: 2;
-
 }
+
 
 
 /* Styling brought over from Marketing Page Repo, global.css */
