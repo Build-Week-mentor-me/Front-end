@@ -35,11 +35,11 @@ function SignupForm({ values, errors, touched }) {
                     </Field>
                 </label>
             </div>
-            <Link to="/profiles">
+            {/* <Link to="/profiles"> */}
               <button type="submit" className="submitBtn">
                 Sign up
               </button>
-            </Link>
+            {/* </Link> */}
         </Form>
     );
 }

@@ -17,19 +17,18 @@ const LoginForm = ({ errors, touched, status }) => {
         <div className='loginForm'>
             <Form>
                 {touched.name && errors.name &&  <p className='error'>{errors.name}</p>}
-                <Field className='loginInput' type='text' name='name' placeholder='Username' />
+                <Field className='loginInput' type='text' name='username' placeholder='Username' />
                 <br/>
                 {touched.password && errors.password &&  <p className='error'>{errors.password}</p>}
                 <Field className='loginInput' type='password' name='password' placeholder='Password' />
                 <br/>
-                <Link to='/profiles'>
+                {/* <Link to='/profiles'> */}
                 <button className='loginInput loginButton' type='submit'>Login</button>
-                </Link>
+                {/* </Link> */}
                 <p className='loginText'>Or...</p>
                 <Link to='/signupform'>
                 <button className='loginInput loginButton' type='submit'>Register</button>
                 </Link>
-
             </Form>
         </div>
         </div>
@@ -39,17 +38,18 @@ const LoginForm = ({ errors, touched, status }) => {
 const formikLoginFrom = withFormik({
     mapPropsToValues: (props) => {
         return {
-            name: props.name || '',
+            username: props.username || '',
             password: props.password || ''
         }
     },
     validationSchema: yup.object().shape({
-        name: yup.string().required('Please enter your user name'),
+        username: yup.string().required('Please enter your user name'),
         password: yup.string().required('Incorrect Password'),
     }),
     handleSubmit: (props, { setStatus }) => {
         //https://reqres.in/api/animals
-        axios.post('https://reqres.in/api/animals', props)
+        axios
+            .post('https://bw-unit4-mentor-me.herokuapp.com/api/users/login', props)
             .then((res) => {
                 setStatus(res.data)
                 console.log(res.data)
