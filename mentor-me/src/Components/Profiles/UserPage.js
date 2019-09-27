@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import api from '../../Configuration/axiosconfig';
 import SingleProfile from "./SingleProfile";
 
 const UserPage = (props) => {
@@ -8,7 +9,7 @@ const UserPage = (props) => {
 console.log(name);
 
     useEffect(() => {
-        axios
+        api
             .get(`https://bw-unit4-mentor-me.herokuapp.com/api/users`)
             .then(res => {
                 console.log(res.data);
@@ -16,6 +17,7 @@ console.log(name);
             })
             .catch(err => {
                 console.error(err);
+                console.dir(err);
             });
     },[name,setUser]);
     return (
