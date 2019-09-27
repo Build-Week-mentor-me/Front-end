@@ -57,6 +57,7 @@ const formikLoginFrom = withFormik({
                 setStatus(res.data)
                 // resetForm()
                 // console.log(res.data)
+                localStorage.setItem("token", res.data.token)
             })
             .catch((err) => {
                 console.log(err)

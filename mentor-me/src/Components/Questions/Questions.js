@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import api from '../../Configuration/axiosconfig';
 import QuestionList from './QuestionList';
 import './QuestionForm.css';
 
@@ -9,13 +10,17 @@ const Questions = (props) => {
     const [questions, setQuestions] = useState([])
 
     useEffect(() => {
-        axios
+        // creating variable, allowing access to token from local storage, way to communicate with server
+        // const headers = { authorization: localStorage.getItem("token") }
+
+
+        api
             .get("https://bw-unit4-mentor-me.herokuapp.com/api/users/questions")
             .then(res => {
                 console.log(res.data)
                 setQuestions(res.data)
             })
-            .catch(err => console.log(err))
+            .catch(err => console.dir(err))
     }, []);
 
     return (

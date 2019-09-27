@@ -69,6 +69,7 @@ const FormikSignupForm = withFormik({
             .post("https://bw-unit4-mentor-me.herokuapp.com/api/users/register", values)
             .then(res => {
                 console.log(res);
+                localStorage.setItem("token", res.data.token)
             })
             .catch(err => {
                 console.log(err.message)
