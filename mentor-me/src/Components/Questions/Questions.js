@@ -13,7 +13,6 @@ const Questions = (props) => {
         // creating variable, allowing access to token from local storage, way to communicate with server
         // const headers = { authorization: localStorage.getItem("token") }
 
-
         api
             .get("https://bw-unit4-mentor-me.herokuapp.com/api/users/questions")
             .then(res => {

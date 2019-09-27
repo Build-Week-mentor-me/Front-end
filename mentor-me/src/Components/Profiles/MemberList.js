@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Profile from "./User-Mentor-Profile";
 import axios from 'axios';
+import api from '../../Configuration/axiosconfig';
 
 function MemberList () {
     const [users, setUsers] = useState([]);
 
         useEffect(() => {
-            axios.get('https://bw-unit4-mentor-me.herokuapp.com/api/users')
+            api.get('https://bw-unit4-mentor-me.herokuapp.com/api/users')
                 .then((res) => {
                     setUsers(res.data);
                     // console.log(res);
