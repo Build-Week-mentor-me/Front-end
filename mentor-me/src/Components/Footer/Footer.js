@@ -14,7 +14,16 @@ const Footer = () => {
                                 <Link to="/loginform">Home</Link>
                             </li>
                             <li className="footerLi">
-                                <Link to="/loginform">Log in</Link>
+                                <Link to="/profiles">Profiles</Link>
+                            </li>
+                            <li className="footerLi">
+                                <Link to="/questions">Questions</Link>
+                            </li>
+                            <li className="footerLi">
+                                <Link to="/loginform">Log In</Link>
+                            </li>
+                            <li className="footerLi">
+                                <Link to="/signupform">Sign Up</Link>
                             </li>
                         </ul>
                     </div>
