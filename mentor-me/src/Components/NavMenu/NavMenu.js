@@ -6,7 +6,9 @@ import '../../App.css';
 const NavMenu = () => {
     return (
         <nav className="mainNav">
+            <a href='https://build1mentorme.netlify.com/'>
             <h2 className="logo">Mentor Me</h2>
+            </a>
             <div className="mobileLogInContainer">
                 <NavLink className="logIn" to="/login">
                     Log In
@@ -15,8 +17,10 @@ const NavMenu = () => {
             </div>
             <ul className="mainUl">
                 <li className="mainLI">
-                    <NavLink to="/loginform">Home</NavLink>
-                </li>
+                    <a href='https://build1mentorme.netlify.com/'>
+                    <p className='mainLI'>Home</p>
+                    </a>
+                    </li>
                 <li className="mainLI">
                     <NavLink to="/profiles">Profiles</NavLink>
                 </li>
