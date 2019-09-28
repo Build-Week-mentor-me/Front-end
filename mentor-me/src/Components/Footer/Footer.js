@@ -11,8 +11,10 @@ const Footer = () => {
                         <h3 className="logo">Mentor Me</h3>
                         <ul className="footerUl">
                             <li className="footerLi">
-                                <Link to="/loginform">Home</Link>
-                            </li>
+                                <a href='https://build1mentorme.netlify.com/'>
+                                <p className='footerLi' >Home</p>
+                                </a>
+                                </li>
                             <li className="footerLi">
                                 <Link to="/profiles">Profiles</Link>
                             </li>
